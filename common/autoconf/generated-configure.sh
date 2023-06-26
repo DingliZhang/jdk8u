@@ -13741,6 +13741,18 @@ test -n "$target_alias" &&
       VAR_CPU_BITS=64
       VAR_CPU_ENDIAN=big
       ;;
+    riscv32)
+      VAR_CPU=riscv32
+      VAR_CPU_ARCH=riscv
+      VAR_CPU_BITS=32
+      VAR_CPU_ENDIAN=little
+      ;;
+    riscv64)
+      VAR_CPU=riscv64
+      VAR_CPU_ARCH=riscv
+      VAR_CPU_BITS=64
+      VAR_CPU_ENDIAN=little
+      ;;
     *)
       as_fn_error $? "unsupported cpu $build_cpu" "$LINENO" 5
       ;;
@@ -13878,6 +13890,18 @@ $as_echo "$OPENJDK_BUILD_OS-$OPENJDK_BUILD_CPU" >&6; }
       VAR_CPU_ARCH=sparc
       VAR_CPU_BITS=64
       VAR_CPU_ENDIAN=big
+      ;;
+    riscv32)
+      VAR_CPU=riscv32
+      VAR_CPU_ARCH=riscv
+      VAR_CPU_BITS=32
+      VAR_CPU_ENDIAN=little
+      ;;
+    riscv64)
+      VAR_CPU=riscv64
+      VAR_CPU_ARCH=riscv
+      VAR_CPU_BITS=64
+      VAR_CPU_ENDIAN=little
       ;;
     *)
       as_fn_error $? "unsupported cpu $host_cpu" "$LINENO" 5
